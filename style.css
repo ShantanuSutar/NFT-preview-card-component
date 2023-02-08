@@ -38,6 +38,7 @@ body {
   max-width: 100%;
   border-radius: 10px;
 }
+
 .container h1 {
   color: white;
   font-size: 20px;
@@ -91,4 +92,39 @@ body {
   .container {
     max-width: 25%;
   }
+}
+
+.container .main-image {
+  position: relative;
+}
+.container .main-image div {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  top: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container h1:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
 }
