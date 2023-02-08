@@ -1,0 +1,94 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-main-BG);
+  color: var(--Soft-blue);
+}
+.container {
+  background-color: var(--Very-dark-blue-card-BG);
+  margin: 50px 25px;
+  padding: 25px;
+  max-width: 450px;
+  border-radius: 15px;
+}
+.container .equi-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.container h1 {
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.container .info {
+  line-height: 1.6;
+}
+.container section {
+  display: flex;
+}
+.container .name {
+  color: white;
+}
+.container .price {
+  color: var(--Cyan);
+}
+.container .timeleft {
+  margin-left: auto;
+}
+.container .credits {
+  display: flex;
+  flex-direction: row;
+}
+.container .avatar {
+  max-width: 100%;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.container section {
+  padding: 15px 0;
+}
+.container hr {
+  border: 1px solid var(--Very-dark-blue-line);
+  margin-bottom: 15px;
+}
+.container .avatar-info {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-width: 25%;
+  }
+}
